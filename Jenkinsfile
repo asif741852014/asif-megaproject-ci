@@ -9,7 +9,6 @@ pipeline {
         SCANNER_HOME = tool 'sonar-scanner'
         IMAGE_TAG = "v${BUILD_NUMBER}"
     }
-
     stages {
         stage('Git Checkout') {
             steps {
